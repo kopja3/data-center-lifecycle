@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Center Lifecycle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kohti vihreämpää IT-tulevaisuutta: Konesalien ympäristövaikutusten optimointi tekoälyn avulla</h1>
+    <div class="lifecycle">
+        <div class="phase" id="planning">
+            <a href="pages/planning.html">Planning</a>
+        </div>
+        <div class="phase" id="design">
+            <a href="pages/design.html">Design</a>
+        </div>
+        <div class="phase" id="procurement">
+            <a href="pages/procurement.html">Procurement</a>
+        </div>
+        <div class="phase" id="implementation">
+            <a href="pages/implementation.html">Implementation</a>
+        </div>
+        <div class="phase" id="operation">
+            <a href="pages/operation.html">Operation</a>
+        </div>
+        <div class="phase" id="expansion">
+            <a href="pages/expansion.html">Expansion</a>
+        </div>
+        <div class="phase" id="decommissioning">
+            <a href="pages/decommissioning.html">Decommissioning</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

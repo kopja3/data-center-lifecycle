@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Procurement Phase</h1>
+    <p>
+        • Valitse energiatehokkaita laitteita ja järjestelmiä.<br>
+        • Hankinta- ja toimitusketjun optimointi.<br>
+        • Varmista, että laitteet täyttävät kestävän kehityksen vaatimukset.<br>
+        • Käytä ympäristöystävällisiä materiaaleja ja teknologioita.
+    </p>
+    <a href="../index.html">Back to main page</a>
+</body>
+</html>

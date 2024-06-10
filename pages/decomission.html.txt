@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decommissioning</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Decommissioning Phase</h1>
+    <p>
+        • Kierrätä ja hävitä laitteet turvallisesti, maksimoiden uudelleenkäytön.<br>
+        • Poista vanhat laitteet ympäristöystävällisesti ja vastuullisesti.<br>
+        • Hyödynnä käytöstäpoistossa energiatehokk

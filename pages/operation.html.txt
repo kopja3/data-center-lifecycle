@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Operation Phase</h1>
+    <p>
+        • Suorita säännöllistä huoltoa ja valvontaa energiatehokkuuden varmistamiseksi.<br>
+        • Käytä energianhallintaohjelmistoja ja seurantaohjelmia.<br>
+        • Hyödynnä automaattisia järjestelmiä kuormituksen tasapainottamiseen ja energian käytön optimointiin.<br>
+        • Tehosta käyttöä datacenter ekosysteemin kautta. Mahdollinen hukkalämmön hyödyntäminen datacenterin ulkopuolelle.
+    </p>
+    <a href="../index.html">Back to main page</a>
+</body>
+</html>

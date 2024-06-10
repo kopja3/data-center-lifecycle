@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Design Phase</h1>
+    <p>
+        • Hanki energiatehokkaita sähkö- ja jäähdytysjärjestelmiä.<br>
+        • Käytä vihreitä rakennuskäytäntöjä.<br>
+        • Optimoi laitteiston sijoittelu parhaan ilmavirtauksen saavuttamiseksi.<br>
+        • Huomioi suunnittelussa kestävät materiaalit ja energiatehokkuus.
+    </p>
+    <a href="../index.html">Back to main page</a>
+</body>
+</html>
