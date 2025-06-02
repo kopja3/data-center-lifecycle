@@ -1,6 +1,6 @@
 # Itseopiskelumateriaali: Vihreä datakeskus ja energiatehokkuus
 
-Tämä itseopiskelumateriaali tarjoaa johdannon vihreän datakeskuksen käsitteisiin, energian kulutukseen ja uudelleenkäyttöön sekä keskeisiin mittareihin (EN 50600-4 -standardi). Materiaali on suunnattu erityisesti abiturienteille ja perustuu aiemmin laadittuun oppaaseen "Vihreän datakeskuksen rakentaminen Suomessa".
+Tämä itseopiskelumateriaali tarjoaa johdannon vihreän datakeskuksen käsitteisiin, energian kulutukseen ja uudelleenkäyttöön sekä keskeisiin mittareihin (EN 50600-4 -standardi). Materiaali on suunnattu erityisesti IT-alan ammattilaisille, abiturienteille, IT-teknikoille ja perustuu oppaaseen "Vihreän datakeskuksen rakentaminen Suomessa".
 
 ---
 
@@ -20,9 +20,8 @@ Kuva esittää datakeskuksen sijaintia valtakunnallisessa sähköverkossa ja ene
 [Katso datakeskuksen sijaintikaavio](assets/Datacenter_in_global_Finngrid_network.PNG)
 
 
-
 **Vihreä datakeskus -käsite**  
-Vihreä datakeskus on suunniteltu ja operoitu ympäristöä säästäen: energiatehokkaasti, uusiutuvilla energialähteillä ja hukkaenergiaa hyödyntäen.
+Vihreä datakeskus on suunniteltu ja sen mekaaniset, sähköiset ja tietojärjestelmät on optimoitu yhdessä maksimaalisen energiatehokkuden ja vähäisen ympäristövaikutuksen saavuttamiseksi (Gowrin et al. 2005).
 
 **Materiaalin eteneminen**  
 1. Vihreän datakeskuksen elementit ja periaatteet  
@@ -31,7 +30,7 @@ Vihreä datakeskus on suunniteltu ja operoitu ympäristöä säästäen: energia
 
 ---
 
-## Datakeskuksen keskeiset rakennusosat ja järjestelmät, jotka mahdollistavat datakeskuksen toiminnan. Data kulkee ja palvelut pyörivät 24/7.
+## Datakeskuksen keskeiset rakennusosat ja järjestelmät, jotka mahdollistavat datakeskuksen toiminnan 24/7.
 
 1. IT-laitteet (ICT-laitteet)
 -Palvelimet (servers)
@@ -50,7 +49,7 @@ Vihreä datakeskus on suunniteltu ja operoitu ympäristöä säästäen: energia
 -DCIM (Data Center Infrastructure Management)
 -Lämpötilojen, ilmankosteuden ja energiankulutuksen seuranta
 
-5.Fyysinen tietoturva
+5. Fyysinen tietoturva
 -Kulunvalvonta ja kameravalvonta
 -Palontorjuntajärjestelmät
 
