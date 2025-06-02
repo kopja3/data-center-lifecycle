@@ -31,6 +31,35 @@ Vihreä datakeskus on suunniteltu ja operoitu ympäristöä säästäen: energia
 
 ---
 
+## Datakeskuksen keskeiset rakennusosat ja järjestelmät, jotka mahdollistavat datakeskuksen toiminnan. Data kulkee ja palvelut pyörivät 24/7.
+
+1. IT-laitteet (ICT-laitteet)
+Palvelimet (servers)
+Tallennuslaitteet (storage)
+Verkkolaitteet (switchit, reitittimet jne.)
+
+2. Sähkönsyöttö
+Päävirtalähde (verkko sähkö, UPS-akustot, dieselgeneraattorit)
+Virtakiskot, jakelukaapit ja suojajärjestelmät
+
+3. Jäähdytys
+Ilmastointi ja jäähdytysjärjestelmät (esim. CRAC-yksiköt, kylmä- ja lämmin käytävä)
+Vapaajäähdytys ja vaihtoehtoiset jäähdytysratkaisut
+
+4. Valvonta- ja hallintajärjestelmät
+DCIM (Data Center Infrastructure Management)
+Lämpötilojen, ilmankosteuden ja energiankulutuksen seuranta
+
+5.Fyysinen tietoturva
+Kulunvalvonta ja kameravalvonta
+Palontorjuntajärjestelmät
+
+6. Runkorakenteet ja tilaratkaisut
+Palvelinsalit (server halls)
+Käyttö- ja huoltotilat
+
+Gowrin (2005) mukaan vihreä datakeskus on datakeskus, jonka mekaaniset, sähköiset ja tietojärjestelmät on suunniteltu ja optimoitu yhdessä maksimaalisen energiatehokkuuden ja vähäisen ympäristövaikutuksen saavuttamiseksi.
+
 ## Osa 1: Vihreän datakeskuksen elementit ja periaatteet
 
 **Tiivis teoriaosuus**  
