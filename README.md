@@ -15,6 +15,11 @@ Datakeskus on suuri palvelintila, jossa säilytetään ja käsitellään dataa. 
 **Ympäristöhaaste**  
 Datakeskukset kuluttavat n. 2–3 % maailman sähköstä, ja osuus kasvaa digitalisaation myötä. Tämä luo haasteita ilmastotavoitteille: sähkön tuotannon päästöt ja kuumenevien palvelinten jäähdytys.
 
+### Havainnollistava kuva
+Kuva esittää datakeskuksen sijaintia valtakunnallisessa sähköverkossa ja energian virtauksia.
+![Datakeskuksen energian virtauskuva](Datacenter_in_global_Finngrid_network.PNG)
+
+
 **Vihreä datakeskus -käsite**  
 Vihreä datakeskus on suunniteltu ja operoitu ympäristöä säästäen: energiatehokkaasti, uusiutuvilla energialähteillä ja hukkaenergiaa hyödyntäen.
 
