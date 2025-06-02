@@ -17,7 +17,7 @@ Datakeskukset kuluttavat n. 2–3 % maailman sähköstä, ja osuus kasvaa digita
 
 ### Havainnollistava kuva
 Kuva esittää datakeskuksen sijaintia valtakunnallisessa sähköverkossa ja energian virtauksia.
-![Datakeskuksen sijainti valtakunnanverkossa](assets/Datacenter_in_global_Finngrid_network.PNG)
+[Katso datakeskuksen sijaintikaavio](assets/Datacenter_in_global_Finngrid_network.PNG)
 
 
 
