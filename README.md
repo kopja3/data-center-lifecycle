@@ -1,35 +1,35 @@
-# Itseopiskelumateriaali: Vihreä datakeskus ja energiatehokkuus
+### Itseopiskelumateriaali: Vihreä datakeskus ja energiatehokkuus
 
-Tämä itseopiskelumateriaali tarjoaa johdannon vihreän datakeskuksen käsitteisiin, energian kulutukseen ja uudelleenkäyttöön sekä keskeisiin mittareihin (EN 50600-4 -standardi). Materiaali on suunnattu erityisesti IT-alan ammattilaisille, abiturienteille, IT-teknikoille ja perustuu oppaaseen "Vihreän datakeskuksen rakentaminen Suomessa".
+-Tämä itseopiskelumateriaali tarjoaa johdannon vihreän datakeskuksen käsitteisiin, energian kulutukseen ja uudelleenkäyttöön sekä keskeisiin mittareihin (EN 50600-4 -standardi). Materiaali on suunnattu erityisesti IT-alan ammattilaisille, abiturienteille, IT-teknikoille ja perustuu oppaaseen "Vihreän datakeskuksen rakentaminen Suomessa".
 
 ---
 
-## Johdanto
+### Johdanto
 
 **Herätä kiinnostus**  
-Tiesitkö, että jokainen netissä katsomasi video ja pilvitiedosto asuu fyysisesti datakeskuksessa? Ne kuluttavat sähköä ja tuottavat lämpöä. Mitä tapahtuu kulisseissa, kun käytämme digitaalisia palveluja?
+-Tiesitkö, että jokainen netissä katsomasi video ja pilvitiedosto asuu fyysisesti datakeskuksessa? Ne kuluttavat sähköä ja tuottavat lämpöä. Mitä tapahtuu kulisseissa, kun käytämme digitaalisia palveluja?
 
 **Mikä on datakeskus?**  
-Datakeskus on suuri palvelintila, jossa säilytetään ja käsitellään dataa. Ne ovat internetin, pilvipalveluiden ja mobiilisovellusten selkäranka.
+-Datakeskus on suuri palvelintila, jossa säilytetään ja käsitellään dataa. Ne ovat internetin, pilvipalveluiden ja mobiilisovellusten selkäranka.
 
 **Ympäristöhaaste**  
-Datakeskukset kuluttavat n. 2–3 % maailman sähköstä, ja osuus kasvaa digitalisaation myötä. Tämä luo haasteita ilmastotavoitteille: sähkön tuotannon päästöt ja kuumenevien palvelinten jäähdytys.
+-Datakeskukset kuluttavat n. 2–3 % maailman sähköstä, ja osuus kasvaa digitalisaation myötä. Tämä luo haasteita ilmastotavoitteille: sähkön tuotannon päästöt ja kuumenevien palvelinten jäähdytys.
 
 ### Havainnollistava kuva
-Kuva esittää datakeskuksen sijaintia valtakunnallisessa sähköverkossa ja energian virtauksia.
+-Kuva esittää datakeskuksen sijaintia valtakunnallisessa sähköverkossa ja energian virtauksia.
 [Katso datakeskuksen sijaintikaavio](assets/Datacenter_in_global_Finngrid_network.PNG)
 
 
 **Vihreä datakeskus -käsite**  
-Vihreä datakeskus on suunniteltu ja sen mekaaniset, sähköiset ja tietojärjestelmät on optimoitu yhdessä maksimaalisen energiatehokkuden ja vähäisen ympäristövaikutuksen saavuttamiseksi (Gowrin et al. 2005).
+-Vihreä datakeskus on suunniteltu ja sen mekaaniset, sähköiset ja tietojärjestelmät on optimoitu yhdessä maksimaalisen energiatehokkuden ja vähäisen ympäristövaikutuksen saavuttamiseksi (Gowrin et al. 2005).
 
 **Materiaalin eteneminen**  
-1. Vihreän datakeskuksen elementit ja periaatteet  
-2. Energian kulutus ja uudelleenkäyttö  
-3. EN 50600-4 -standardi ja mittarit  
+-1. Vihreän datakeskuksen elementit ja periaatteet  
+-2. Energian kulutus ja uudelleenkäyttö  
+-3. EN 50600-4 -standardi ja mittarit  
 
 ---
-1. Konesalitilat ja rakenteet
+### 1. Konesalitilat ja rakenteet
    
 Erilliset palvelinsalit: Datakeskus koostuu erillisistä konesalitiloista (”white space”), jotka on suunniteltu palvelinlaitteille. Tilat ovat kontrolloituja ympäristöjä, joissa lämpötila, ilmankosteus ja pölyisyys pidetään tarkasti hallinnassa 24/7.
 Laiteräkit ja kaapit: Palvelimet ja muut ICT-laitteet asennetaan standardikokoisiin laiteräkkeihin (palvelinkaappeihin). Räkkeihin on järjestetty sekä virransyöttö että tietoliikennekaapelointi. Räkkejä sijoitetaan riveihin siten, että muodostetaan kuuma- ja kylmäkäytävät optimaalisen jäähdytyksen saavuttamiseksi.
@@ -37,7 +37,7 @@ Kaksinkertainen lattiarakenne: Monissa datakeskuksissa on korotettu lattia. Sen 
 
 (Konesalitilojen huolellinen suunnittelu varmistaa, että IT-laitteisto toimii optimaalisissa olosuhteissa. Se luo pohjan muille järjestelmille, kuten sähkölle ja jäähdytykselle, jotka integroituvat rakenteisiin.)
 
-2. Sähkönsyöttö ja varavoima
+### 2. Sähkönsyöttö ja varavoima
    
 Datakeskuksessa on kaksi toisistaan riippumatonta sähkönsyöttöä (A- ja B-syötöt), jotka jaetaan erillisiin pää- ja jakokeskuksiin sekä laitteiden PDU-yksiköihin. UPS-järjestelmät turvaavat hetkellisen varavirtasyötön sähköhäiriöiden aikana. Pidempiä katkoksia varten käytetään varavoimageneraattoreita, jotka käynnistyvät automaattisesti. 
 Kaikki järjestelmät on maadoitettu ja varustettu ylijännitesuojauksella. Hälytykset ja valvonta varmistavat, että poikkeamat huomataan nopeasti.
@@ -53,7 +53,7 @@ Sähkönjakelu ja redundanssi: Sähkö jaetaan datakeskuksessa varmistetusti. Jo
 
 (Sähkönsyötön varmistusjärjestelmät takaavat, että palvelimet pysyvät käynnissä kaikissa tilanteissa. Kahdennetut syötöt, UPSit ja varavoima muodostavat ketjun, joka on yhtä vahva kuin sen vahvin lenkki – ja datakeskuksissa jokainen lenkki on suunniteltu kestämään. Seuraavaksi tarkastellaan, kuinka yhtä lailla kriittinen jäähdytys huolehtii siitä, että laitteet eivät ylikuumene.)
 
-3. ICT-laitteet ja tietoliikenne
+### 3. ICT-laitteet ja tietoliikenne
 
 Palvelimet: Nämä ovat datakeskuksen tietojenkäsittelyn ydin. Palvelimet suorittavat laskentaa ja ajaa sovelluksia ympäri vuorokauden. Ne tuottavat lämpöä ja kuluttavat merkittävästi sähköä, joten niiden keskeytymätön toiminta vaatii tehokasta jäähdytystä ja luotettavaa sähkönsyöttöä.
 Tallennusjärjestelmät: Datakeskuksessa on laajamittaisia tallennusratkaisuja (esim. levypohjaiset RAID-järjestelmät, SSD-kamppeet tai nauhakirjastot) datan säilyttämiseen. Nämä järjestelmät varmistavat, että tieto on saatavilla 24/7. Nekin sijaitsevat räkkiin asennettuina ja vaativat sekä sähköä että jäähdytystä.
@@ -66,7 +66,7 @@ Sisäverkon kapasiteetti: Myös datakeskuksen sisäinen tietoverkko on suunnitel
 (ICT-laitteiden ja tietoliikenteen osuus takaa, että datakeskus pystyy suorittamaan varsinaisen tehtävänsä: datan tallennuksen, käsittelyn ja siirron luotettavasti. Jotta tämä on mahdollista ympäri vuorokauden, laitteiston on saatava keskeytyksettä virtaa ja riittävä jäähdytys, ja niiden toiminnasta on oltava jatkuva näkyvyys – nämä seikat käsitellään seuraavaksi.)
 
 
-4. Jäähdytys- ja ilmastointijärjestelmät
+### 4. Jäähdytys- ja ilmastointijärjestelmät
 
 Jäähdytysjärjestelmät ylläpitävät laitteiden toimintalämpötilan ja ilmankosteuden. Palvelinsalien ilmastointia hoitavat CRAC-/CRAH-yksiköt, jotka hyödyntävät kylmävesi- tai glykolijäähdytystä. Lämpö siirretään ulkoilmaan jäähdytystornien tai kuivasäteilijöiden avulla. Järjestelmät on kahdennettu ja suunniteltu energiatehokkaiksi. Hukkalämmön hyödyntäminen esimerkiksi kiinteistön lämmitykseen vähentää ympäristökuormaa.
 
@@ -82,7 +82,7 @@ Kosteudenhallinta: Jäähdytysjärjestelmä sisältää myös ilmankosteuden sä
 
 (Jäähdytysjärjestelmät siis varmistavat, että IT-laitteet pysyvät viileinä ja toimintakykyisinä ympäri vuorokauden. Yhdessä sähkönsyötön kanssa ne muodostavat datakeskuksen “ylläpitoinfrastruktuurin”, joka huolehtii laitteiden perusedellytyksistä.)
 
-6. Turvallisuus- ja valvontajärjestelmät
+### 5. Turvallisuus- ja valvontajärjestelmät
 
 Fyysinen turvallisuus kattaa kulunvalvonnan, kameravalvonnan ja vahvistetut rakenteet. Paloturvallisuus perustuu varhaisiin ilmaisimiin ja kaasusammutusjärjestelmiin. Ympäristöolosuhteita ja sähkönsyöttöä seurataan jatkuvasti antureilla ja valvontajärjestelmillä. Keskitetty valvomo tai NOC huolehtii hälytyksiin reagoimisesta ympäri vuorokauden. Kaikki järjestelmät tukevat luotettavaa ja keskeytymätöntä toimintaa.
 
@@ -113,7 +113,7 @@ Hälytykset ja reagointi: Kaikki valvontajärjestelmien keräämät hälytykset 
 
 (Turvallisuus- ja valvontajärjestelmät varmistavat, että datakeskuksen toiminta ei keskeydy inhimillisten tai ympäristöllisten riskien takia. Fyysiset uhat, kuten tunkeutuminen tai tulipalo, pidetään hallinnassa, ja teknisten järjestelmien tilaa seurataan herkeämättä. Tämä monitasoinen turvaverkko täydentää datakeskuksen kokonaisuutta siten, että kaikki edellä kuvatut osa-alueet – tilat, laitteet, sähkö, jäähdytys ja turvallisuus – toimivat yhdessä luotettavasti.)
 
-Yhteenveto
+### Yhteenveto
 Nämä järjestelmät muodostavat datakeskuksen perustan ja toimivat yhdessä varmistaakseen 24/7-toiminnan. Seuraavaksi opiskelumateriaalissa syvennytään siihen, miten energiatehokkuus, vihreä lähestymistapa ja ympäristöystävälliset ratkaisut nivoutuvat datakeskuksen arkeen.
 
 
@@ -127,7 +127,7 @@ https://tnnet.fi/palvelut/konesalipalvelut/
 
 Gowrin (2005) mukaan vihreä datakeskus on datakeskus, jonka mekaaniset, sähköiset ja tietojärjestelmät on suunniteltu ja optimoitu yhdessä maksimaalisen energiatehokkuuden ja vähäisen ympäristövaikutuksen saavuttamiseksi.
 
-## Osa 1: Vihreän datakeskuksen elementit ja periaatteet
+### Osa 1: Vihreän datakeskuksen elementit ja periaatteet
 
 - **Energiatehokkuus**: Jokainen wattitunti hyödynnettävä maksimaalisesti. Palvelinlaitteiden energiapihi valinta ja älykäs kapasiteetin hallinta.
 Perusta: Miksi energiatehokkuus on tärkeää?
@@ -138,404 +138,384 @@ Perusta: Miksi energiatehokkuus on tärkeää?
 
 ⚡ Luotettavuus: Vähemmän lämpökuormaa, pidempi laitteiden käyttöikä ja vähemmän katkoksia.
 
-Mitä opas tarjoaa?
+### Mitä opas tarjoaa?
 
-Opas perehdyttää sinut energiatehokkuuden periaatteisiin, käytännön menetelmiin, tehokkaimpiin strategioihin ja niiden soveltamiseen – sekä tarjoaa ratkaisuja yleisimpiin haasteisiin. 🚀
-🟩 Ydinkäsitteet energiatehokkuudessa
-🔹 Periaate 1: Energiatehokas laitteistovalinta
+Tämä osa perehdyttää sinut energiatehokkuuden periaatteisiin, käytännön menetelmiin, tehokkaimpiin strategioihin ja niiden soveltamiseen – sekä tarjoaa ratkaisuja yleisimpiin haasteisiin. 🚀
+-🟩 Ydinkäsitteet energiatehokkuudessa
+-🔹 Periaate 1: Energiatehokas laitteistovalinta
 
-Selitys: Energiatehokkaiden laitteiden valinta (palvelimet, tallennusratkaisut, verkkolaitteet) on vihreän datakeskuksen ensimmäinen askel.
+-Selitys: Energiatehokkaiden laitteiden valinta (palvelimet, tallennusratkaisut, verkkolaitteet) on vihreän datakeskuksen ensimmäinen askel.
+-Käytännön sovellus:
+-✅ Suosi energiatehokkuusmerkinnöillä (esim. ENERGY STAR) varustettuja laitteita.
+-✅ Vertaile eri mallien sähkönkulutusta ja suorituskykyä (performance-per-watt).
+-✅ Vältä ylitehoisia ratkaisuja – valitse kapasiteetiltaan sopiva laitteisto kuormatarpeisiin.
+-🔹 Periaate 2: Älykäs kapasiteetin hallinta
 
-Käytännön sovellus:
-✅ Suosi energiatehokkuusmerkinnöillä (esim. ENERGY STAR) varustettuja laitteita.
-✅ Vertaile eri mallien sähkönkulutusta ja suorituskykyä (performance-per-watt).
-✅ Vältä ylitehoisia ratkaisuja – valitse kapasiteetiltaan sopiva laitteisto kuormatarpeisiin.
-🔹 Periaate 2: Älykäs kapasiteetin hallinta
+-Selitys: Palvelinresurssit on sovitettava kuormiin dynaamisesti – ei jatkuvaa ylitehoa.
+-Käytännön sovellus:
+-✅ Käytä virtualisointia ja konttiteknologioita kuormien optimointiin.
+-✅ Hyödynnä automaattista resurssien allokointia (load balancing, autoscaling).
+-✅ Seuraa kuormitusasteita jatkuvasti ja siirrä kuormia tarpeen mukaan.
+-🔹 Periaate 3: Jatkuva mittaaminen ja säätäminen
 
-Selitys: Palvelinresurssit on sovitettava kuormiin dynaamisesti – ei jatkuvaa ylitehoa.
+-Selitys: Energiankulutus ei ole staattinen – vain jatkuva seuranta tuo parhaan lopputuloksen.
+-Käytännön sovellus:
+-✅ Asenna älykkäitä mittalaitteita (DCIM-järjestelmät, PUE-seuranta).
+-✅ Analysoi energiankulutustietoja säännöllisesti ja tee hienosäätöjä.
+-✅ Kouluta henkilöstö ymmärtämään energiadataa ja reagoimaan.
+-🔧 Tehokkaimmat menetelmät energiatehokkuuteen
+-🔸 Menetelmä 1: Virtualisointi ja konttiteknologiat
 
-Käytännön sovellus:
-✅ Käytä virtualisointia ja konttiteknologioita kuormien optimointiin.
-✅ Hyödynnä automaattista resurssien allokointia (load balancing, autoscaling).
-✅ Seuraa kuormitusasteita jatkuvasti ja siirrä kuormia tarpeen mukaan.
-🔹 Periaate 3: Jatkuva mittaaminen ja säätäminen
+-Kuvaus: Palvelinten virtualisointi vähentää fyysisten laitteiden määrää, jolloin energiankulutus pienenee.
+-Vaiheet:
+-1️⃣ Arvioi palvelinten kuormat ja konsolidointimahdollisuudet.
+-2️⃣ Ota käyttöön virtualisointialusta (esim. VMware, Hyper-V).
+-3️⃣ Hyödynnä konttiteknologioita (esim. Docker, Kubernetes) vieläkin joustavampaan kapasiteetin hallintaan.
 
-Selitys: Energiankulutus ei ole staattinen – vain jatkuva seuranta tuo parhaan lopputuloksen.
+-Parhaat käytännöt:
+-✅ Säädä virtuaalikoneiden resurssivaraukset tarpeen mukaan.
+-✅ Varmista hypervisorin päivitykset ja suojaus.
+-✅ Dokumentoi ja testaa kuormansiirrot etukäteen.
 
-Käytännön sovellus:
-✅ Asenna älykkäitä mittalaitteita (DCIM-järjestelmät, PUE-seuranta).
-✅ Analysoi energiankulutustietoja säännöllisesti ja tee hienosäätöjä.
-✅ Kouluta henkilöstö ymmärtämään energiadataa ja reagoimaan.
-🔧 Tehokkaimmat menetelmät energiatehokkuuteen
-🔸 Menetelmä 1: Virtualisointi ja konttiteknologiat
+-Odotetut tulokset:
+-👉 Vähemmän fyysisiä laitteita, alhaisempi energiankulutus ja helpompi hallinta.
+-🔸 Menetelmä 2: Dynaaminen virranhallinta (Dynamic Power Management)
 
-Kuvaus: Palvelinten virtualisointi vähentää fyysisten laitteiden määrää, jolloin energiankulutus pienenee.
+-Kuvaus: Sovellusten ja palvelinten virrankulutusta säädetään automaattisesti kuorman mukaan.
+-Vaiheet:
+-1️⃣ Hyödynnä prosessorien energiansäästöominaisuuksia (esim. Intel SpeedStep, AMD Cool’n’Quiet).
+-2️⃣ Ota käyttöön käyttöjärjestelmätasoinen virransäästö (esim. Linux cpufreq-työkalut).
+-3️⃣ Hyödynnä konesalilaitteiden (verkko- ja tallennusratkaisut) energiatiloja (idle states, sleep modes).
 
-Vaiheet:
-1️⃣ Arvioi palvelinten kuormat ja konsolidointimahdollisuudet.
-2️⃣ Ota käyttöön virtualisointialusta (esim. VMware, Hyper-V).
-3️⃣ Hyödynnä konttiteknologioita (esim. Docker, Kubernetes) vieläkin joustavampaan kapasiteetin hallintaan.
+-Parhaat käytännöt:
+-✅ Testaa virransäästöasetusten vaikutus suorituskykyyn.
+-✅ Käytä kuormanhallinnan automaatiota (automaattinen skaalaus ylös/alas).
+-✅ Aseta selkeät rajat ja prioriteetit palveluille.
 
-Parhaat käytännöt:
-✅ Säädä virtuaalikoneiden resurssivaraukset tarpeen mukaan.
-✅ Varmista hypervisorin päivitykset ja suojaus.
-✅ Dokumentoi ja testaa kuormansiirrot etukäteen.
+-Odotetut tulokset:
+-👉 Optimaalinen tasapaino suorituskyvyn ja energiankulutuksen välillä.
+-🔸 Menetelmä 3: Älykäs kuorman tasapainotus (Load Balancing)
 
-Odotetut tulokset:
-👉 Vähemmän fyysisiä laitteita, alhaisempi energiankulutus ja helpompi hallinta.
-🔸 Menetelmä 2: Dynaaminen virranhallinta (Dynamic Power Management)
+-Kuvaus: Kuormia jaetaan useille palvelimille siten, että vältetään yksittäisten laitteiden ylikuormitus.
 
-Kuvaus: Sovellusten ja palvelinten virrankulutusta säädetään automaattisesti kuorman mukaan.
+-Vaiheet:
+-1️⃣ Valitse load balancer -ratkaisu (esim. F5, HAProxy, Nginx).
+-2️⃣ Määritä dynaaminen kuormanjako – huomioi palvelinten tehot ja kuormitustiedot.
+-3️⃣ Seuraa kuormitustilastoja ja tee hienosäätöjä kuormien reititykseen.
 
-Vaiheet:
-1️⃣ Hyödynnä prosessorien energiansäästöominaisuuksia (esim. Intel SpeedStep, AMD Cool’n’Quiet).
-2️⃣ Ota käyttöön käyttöjärjestelmätasoinen virransäästö (esim. Linux cpufreq-työkalut).
-3️⃣ Hyödynnä konesalilaitteiden (verkko- ja tallennusratkaisut) energiatiloja (idle states, sleep modes).
+-Parhaat käytännöt:
+-✅ Käytä automaattisia sääntöjä kuormanjakoon (esim. pyörivä jako, painotettu jako).
+-✅ Varmista load balancerin redundanssi.
+-✅ Älä unohda tietoturvaa kuormanjakajassa.
 
-Parhaat käytännöt:
-✅ Testaa virransäästöasetusten vaikutus suorituskykyyn.
-✅ Käytä kuormanhallinnan automaatiota (automaattinen skaalaus ylös/alas).
-✅ Aseta selkeät rajat ja prioriteetit palveluille.
+-Odotetut tulokset:
+-👉 Tasainen kuormanjako, vähemmän laitteiden stressiä ja parempi energiatehokkuus.
+-💡 Kehittyneet strategiat energiatehokkuuden huippuunsa viemiseksi
+-🔹 Strategia 1: Hukkalämmön hyödyntäminen
 
-Odotetut tulokset:
-👉 Optimaalinen tasapaino suorituskyvyn ja energiankulutuksen välillä.
-🔸 Menetelmä 3: Älykäs kuorman tasapainotus (Load Balancing)
+-Tarkoitus: Käytä palvelinten tuottamaa lämpöä kiinteistöjen lämmitykseen – vähentää ympäristökuormaa.
 
-Kuvaus: Kuormia jaetaan useille palvelimille siten, että vältetään yksittäisten laitteiden ylikuormitus.
+-Menetelmä:
 
-Vaiheet:
-1️⃣ Valitse load balancer -ratkaisu (esim. F5, HAProxy, Nginx).
-2️⃣ Määritä dynaaminen kuormanjako – huomioi palvelinten tehot ja kuormitustiedot.
-3️⃣ Seuraa kuormitustilastoja ja tee hienosäätöjä kuormien reititykseen.
+-Liitä jäähdytysjärjestelmään lämpöpumppuja tai kaukolämpöverkko.
 
-Parhaat käytännöt:
-✅ Käytä automaattisia sääntöjä kuormanjakoon (esim. pyörivä jako, painotettu jako).
-✅ Varmista load balancerin redundanssi.
-✅ Älä unohda tietoturvaa kuormanjakajassa.
+-Seuraa lämpötehoa ja hyödynnä tehokkaasti.
 
-Odotetut tulokset:
-👉 Tasainen kuormanjako, vähemmän laitteiden stressiä ja parempi energiatehokkuus.
-💡 Kehittyneet strategiat energiatehokkuuden huippuunsa viemiseksi
-🔹 Strategia 1: Hukkalämmön hyödyntäminen
+-Tarvittavat työkalut:
+-Lämpöpumppu, putkistot, lämmönsiirtimet.
 
-Tarkoitus: Käytä palvelinten tuottamaa lämpöä kiinteistöjen lämmitykseen – vähentää ympäristökuormaa.
+-Energiavirtojen monitorointi.
 
-Menetelmä:
+-🔹 Strategia 2: Ulkoilman hyödyntäminen (free cooling)
 
-Liitä jäähdytysjärjestelmään lämpöpumppuja tai kaukolämpöverkko.
+-Tarkoitus: Käytä luonnon viileyttä laitteiden jäähdytykseen.
 
-Seuraa lämpötehoa ja hyödynnä tehokkaasti.
+-Menetelmä:
+-Asenna laitteet, jotka pystyvät ottamaan ulkoilmaa suoraan tai epäsuorasti jäähdytykseen.
 
-Tarvittavat työkalut:
+-Automatisoi käyttö vallitsevien sääolosuhteiden mukaan.
 
-Lämpöpumppu, putkistot, lämmönsiirtimet.
+-Tarvittavat työkalut:
 
-Energiavirtojen monitorointi.
+-Ilmanvaihtokanavat, lämmönvaihtimet, älykkäät ohjausjärjestelmät.
+-🔹 Strategia 3: DCIM-järjestelmien hyödyntäminen
 
-🔹 Strategia 2: Ulkoilman hyödyntäminen (free cooling)
+-Tarkoitus: Yhdistä energiatehokkuuden hallinta keskitettyyn seurantaan.
 
-Tarkoitus: Käytä luonnon viileyttä laitteiden jäähdytykseen.
+-Menetelmä:
+-Käytä DCIM-ohjelmistoa (Data Center Infrastructure Management) energiankulutuksen ja lämpötilojen valvontaan.
 
-Menetelmä:
+-Analysoi dataa ja tee hienosäätöjä kuormiin ja laitteiden käyttöön.
 
-Asenna laitteet, jotka pystyvät ottamaan ulkoilmaa suoraan tai epäsuorasti jäähdytykseen.
+-Työkalut:
 
-Automatisoi käyttö vallitsevien sääolosuhteiden mukaan.
+-DCIM-ohjelmisto, anturit, automaatioalustat.
 
-Tarvittavat työkalut:
+- 📆 Integraatiorutiinit energiatehokkuuden ylläpitämiseen
+-Aamurutiini: Käy läpi kuormitus- ja lämpötilaraportit, reagoi poikkeamiin.
+-Päivän aikana: Valvo kuormien jakautumista ja automaatiota.
+-Iltaisin: Tee kooste päivän energiankulutuksesta ja palvelinten vasteista.
+-Viikoittain: Testaa varajärjestelmät ja virransäästötoiminnot.
+-Kuukausittain: Arvioi ja päivitä energiatehokkuusstrategiaa PUE-arvon mukaan.
 
-Ilmanvaihtokanavat, lämmönvaihtimet, älykkäät ohjausjärjestelmät.
+-⚠️ Yleisimmät haasteet ja ratkaisut
+-Haaste	Miksi syntyy?	Ratkaisu
+-Ylikuormitetut palvelimet	Liian vähän kuormanjakoa	Hyödynnä kuormantasain- ja skaalausratkaisut
+-Liiallinen lämpökuorma	Ylitehoiset laitteet ja jäähdytyksen puute	Käytä kuuma- ja kylmäkäytäviä, optimoitu jäähdytys
+-Seurantadata puuttuu	Mittalaitteiden puute tai puutteellinen käyttö	Ota käyttöön DCIM- ja energiaseuranta-alustat
+-🌟 Yhteenveto ja seuraavat askeleet
 
-🔹 Strategia 3: DCIM-järjestelmien hyödyntäminen
+-Vihreän datakeskuksen energiatehokkuus ei ole vain ympäristöteko – se on kilpailuetu ja kustannussäästö. Ymmärtämällä energiapihin laitteistovalinnan, älykkään kapasiteetin hallinnan ja jatkuvan mittaamisen merkityksen, voit rakentaa datakeskuksesta tehokkaan ja kestävän.
 
-Tarkoitus: Yhdistä energiatehokkuuden hallinta keskitettyyn seurantaan.
-
-Menetelmä:
-
-Käytä DCIM-ohjelmistoa (Data Center Infrastructure Management) energiankulutuksen ja lämpötilojen valvontaan.
-
-Analysoi dataa ja tee hienosäätöjä kuormiin ja laitteiden käyttöön.
-
-Työkalut:
-
-DCIM-ohjelmisto, anturit, automaatioalustat.
-
-📆 Integraatiorutiinit energiatehokkuuden ylläpitämiseen
-
-Aamurutiini: Käy läpi kuormitus- ja lämpötilaraportit, reagoi poikkeamiin.
-
-Päivän aikana: Valvo kuormien jakautumista ja automaatiota.
-
-Iltaisin: Tee kooste päivän energiankulutuksesta ja palvelinten vasteista.
-
-Viikoittain: Testaa varajärjestelmät ja virransäästötoiminnot.
-
-Kuukausittain: Arvioi ja päivitä energiatehokkuusstrategiaa PUE-arvon mukaan.
-
-⚠️ Yleisimmät haasteet ja ratkaisut
-Haaste	Miksi syntyy?	Ratkaisu
-Ylikuormitetut palvelimet	Liian vähän kuormanjakoa	Hyödynnä kuormantasain- ja skaalausratkaisut
-Liiallinen lämpökuorma	Ylitehoiset laitteet ja jäähdytyksen puute	Käytä kuuma- ja kylmäkäytäviä, optimoitu jäähdytys
-Seurantadata puuttuu	Mittalaitteiden puute tai puutteellinen käyttö	Ota käyttöön DCIM- ja energiaseuranta-alustat
-🌟 Yhteenveto ja seuraavat askeleet
-
-Vihreän datakeskuksen energiatehokkuus ei ole vain ympäristöteko – se on kilpailuetu ja kustannussäästö. Ymmärtämällä energiapihin laitteistovalinnan, älykkään kapasiteetin hallinnan ja jatkuvan mittaamisen merkityksen, voit rakentaa datakeskuksesta tehokkaan ja kestävän.
-
-Seuraavat askeleet:
-🔹 Tee nykytilan kartoitus: mikä on nykyinen energiankulutus?
-🔹 Tunnista helpoimmat energiansäästön kohteet (esim. virtualisointi).
-🔹 Laadi toimenpidesuunnitelma ja ota ensimmäiset askeleet jo tänään!
+-Seuraavat askeleet:
+-🔹 Tee nykytilan kartoitus: mikä on nykyinen energiankulutus?
+-🔹 Tunnista helpoimmat energiansäästön kohteet (esim. virtualisointi).
+-🔹 Laadi toimenpidesuunnitelma ja ota ensimmäiset askeleet jo tänään!
 
 - **Tehokas jäähdytys**: Vapaajäähdytys ulkoilmalla, veden/meriveden käyttö, hyvä ilmanvaihto ja eristys.  
 -Miksi jäähdytysjärjestelmät ovat elintärkeitä?
 
-Datakeskusten jäähdytysjärjestelmät ovat kriittisiä, sillä IT-laitteet tuottavat huomattavia määriä lämpöä jatkuvassa käytössä. Ilman tehokasta jäähdytystä laitteet voivat ylikuumentua, mikä johtaa laiterikkoihin, käyttökatkoihin ja jopa tietojen menetykseen. Hyvin suunnitellut jäähdytysjärjestelmät varmistavat, että laitteet toimivat optimaalisessa lämpötilassa ympäri vuorokauden.
-Perusta ja kehitys
+-Datakeskusten jäähdytysjärjestelmät ovat kriittisiä, sillä IT-laitteet tuottavat huomattavia määriä lämpöä jatkuvassa käytössä. Ilman tehokasta jäähdytystä laitteet voivat ylikuumentua, mikä johtaa laiterikkoihin, käyttökatkoihin ja jopa tietojen menetykseen. Hyvin suunnitellut jäähdytysjärjestelmät varmistavat, että laitteet toimivat optimaalisessa lämpötilassa ympäri vuorokauden.
+-Perusta ja kehitys
 
-Perinteisesti datakeskukset ovat luottaneet ilmastointiin ja mekaaniseen jäähdytykseen. Uudet ratkaisut, kuten hukkalämmön hyödyntäminen ja luonnollisen jäähdytyksen käyttö, tuovat energiatehokkuutta ja ympäristöystävällisyyttä. Yhdessä sähkönsyötön ja turvallisuusratkaisujen kanssa jäähdytys muodostaa kriittisen osan datakeskuksen infrastruktuuria.
-Jäähdytyksen ydinkomponentit ja periaatteet
-🔹 Ilmastointi ja lämpötilanhallinta
+-Perinteisesti datakeskukset ovat luottaneet ilmastointiin ja mekaaniseen jäähdytykseen. Uudet ratkaisut, kuten hukkalämmön hyödyntäminen ja luonnollisen jäähdytyksen käyttö, tuovat energiatehokkuutta ja ympäristöystävällisyyttä. -Yhdessä sähkönsyötön ja turvallisuusratkaisujen kanssa jäähdytys muodostaa kriittisen osan datakeskuksen infrastruktuuria.
+-Jäähdytyksen ydinkomponentit ja periaatteet
+-🔹 Ilmastointi ja lämpötilanhallinta
 
-Selitys: Palvelinsaleissa on tarkasti säädetty ilmastointi, joka pitää lämpötilan vakaana (tyypillisesti 18–27 °C). Myös ilmanlaatu (kosteus, puhtaus) on keskeinen osa.
+-Selitys: Palvelinsaleissa on tarkasti säädetty ilmastointi, joka pitää lämpötilan vakaana (tyypillisesti 18–27 °C). Myös ilmanlaatu (kosteus, puhtaus) on keskeinen osa.
 
-Käytännön sovellus:
+-Käytännön sovellus:
 
-Valitse ilmastointiyksiköt (CRAC tai CRAH) laitetoimittajien suositusten mukaan.
+-Valitse ilmastointiyksiköt (CRAC tai CRAH) laitetoimittajien suositusten mukaan.
 
-Varmista, että ilmanvaihto- ja suodatusjärjestelmät vastaavat palvelinsalien vaatimuksia.
+-Varmista, että ilmanvaihto- ja suodatusjärjestelmät vastaavat palvelinsalien vaatimuksia.
 
-🔹 Kuuma- ja kylmäkäytäväjärjestely
+-🔹 Kuuma- ja kylmäkäytäväjärjestely
 
-Selitys: Laiteräkkien sijoittelu erillisiin kuuma- ja kylmäkäytäviin vähentää ilman sekoittumista ja parantaa jäähdytystehoa.
+-Selitys: Laiteräkkien sijoittelu erillisiin kuuma- ja kylmäkäytäviin vähentää ilman sekoittumista ja parantaa jäähdytystehoa.
 
-Käytännön sovellus:
+-Käytännön sovellus:
 
-Räkkiasetelma: rivit siten, että kylmät ilmanottoaukot ovat yhdessä käytävässä ja kuumat poistoaukot toisessa.
+-Räkkiasetelma: rivit siten, että kylmät ilmanottoaukot ovat yhdessä käytävässä ja kuumat poistoaukot toisessa.
 
-Kapselointi: kuumakäytävien sulkeminen muoviseinillä tai ovilla tehostaa jäähdytystä.
+-Kapselointi: kuumakäytävien sulkeminen muoviseinillä tai ovilla tehostaa jäähdytystä.
 
-🔹 CRAC- ja CRAH-yksiköt
+-🔹 CRAC- ja CRAH-yksiköt
 
-Selitys:
+-Selitys:
 
-CRAC: Jäähdyttää ilmaa kylmäaineella (kompressorit).
+-CRAC: Jäähdyttää ilmaa kylmäaineella (kompressorit).
 
-CRAH: Käyttää rakennuksen jäähdytysvettä ilman viilentämiseen.
+-CRAH: Käyttää rakennuksen jäähdytysvettä ilman viilentämiseen.
 
-Käytännön sovellus:
+-Käytännön sovellus:
 
-Valitse oikea yksikkö palvelinsalin koon ja kuorman mukaan.
+-Valitse oikea yksikkö palvelinsalin koon ja kuorman mukaan.
 
-Ylläpidä säännöllistä huoltoa ja puhdistusta tukkeutumisen ehkäisemiseksi.
+-Ylläpidä säännöllistä huoltoa ja puhdistusta tukkeutumisen ehkäisemiseksi.
 
-🛠️ Tehokkaimmat jäähdytysmenetelmät
-🔸 Menetelmä 1: Kylmävesijärjestelmät (Chillerit ja jäähdytystornit)
+- 🛠 Tehokkaimmat jäähdytysmenetelmät
+-🔸 Menetelmä 1: Kylmävesijärjestelmät (Chillerit ja jäähdytystornit)
 
-Kuvaus: Jäähdytyskoneikko tuottaa kylmää vettä, joka kiertää ilmastointiyksiköihin. Lämmönsiirto ulkoilmaan tapahtuu jäähdytystorneilla.
+-Kuvaus: Jäähdytyskoneikko tuottaa kylmää vettä, joka kiertää ilmastointiyksiköihin. Lämmönsiirto ulkoilmaan tapahtuu jäähdytystorneilla.
 
-Vaiheet:
+-Vaiheet:
 
-Chiller tuottaa kylmää vettä (tyypillisesti 7–12 °C).
+-Chiller tuottaa kylmää vettä (tyypillisesti 7–12 °C).
 
-Kylmä vesi kiertää CRAH-yksiköissä.
+-Kylmä vesi kiertää CRAH-yksiköissä.
 
-Kuuma vesi palautuu jäähdytyskoneikkoon.
+-Kuuma vesi palautuu jäähdytyskoneikkoon.
 
-Jäähdytystorni poistaa lämmön ulkoilmaan.
+-Jäähdytystorni poistaa lämmön ulkoilmaan.
 
-Parhaat käytännöt:
-✅ Säännölliset tarkastukset ja vedenkäsittely biofilmin estämiseksi.
-✅ Varmista riittävä jäähdytystornin ilmavirta ja vedenkierto.
-✅ Redundanssi: useampi chilleri, N+1- tai 2N-konfiguraatio.
+-Parhaat käytännöt:
+-✅ Säännölliset tarkastukset ja vedenkäsittely biofilmin estämiseksi.
+-✅ Varmista riittävä jäähdytystornin ilmavirta ja vedenkierto.
+-✅ Redundanssi: useampi chilleri, N+1- tai 2N-konfiguraatio.
 
-Yleiset virheet:
-❌ Chillerin väärä mitoitus – liiallinen yliteho kuluttaa energiaa.
-❌ Huollon laiminlyönti – levä ja korroosio voivat heikentää tehokkuutta.
+-Yleiset virheet:
+-❌ Chillerin väärä mitoitus – liiallinen yliteho kuluttaa energiaa.
+-❌ Huollon laiminlyönti – levä ja korroosio voivat heikentää tehokkuutta.
 
-Odotetut tulokset:
-👉 Vakaat lämpötilat ja energiatehokkuus, laitteiden pitkä käyttöikä.
-🔸 Menetelmä 2: In-row- tai rack-kohtaiset jäähdytysratkaisut
+-Odotetut tulokset:
+-👉 Vakaat lämpötilat ja energiatehokkuus, laitteiden pitkä käyttöikä.
+-🔸 Menetelmä 2: In-row- tai rack-kohtaiset jäähdytysratkaisut
 
-Kuvaus: Jäähdytysyksiköt sijoitetaan laiterivien väliin tai jopa suoraan räkkien sisään.
+-Kuvaus: Jäähdytysyksiköt sijoitetaan laiterivien väliin tai jopa suoraan räkkien sisään.
 
-Vaiheet:
+-Vaiheet:
 
-Jäähdytysyksiköt puhaltavat kylmää ilmaa suoraan räkkien eteen.
+-Jäähdytysyksiköt puhaltavat kylmää ilmaa suoraan räkkien eteen.
+-Kuuma poistoilma poistetaan tarkasti kanavien kautta.
+-Soveltuu erityisesti korkean tehotiheyden (high-density) ympäristöihin.
 
-Kuuma poistoilma poistetaan tarkasti kanavien kautta.
+-Parhaat käytännöt:
+-✅ Käytä kuuma- ja kylmäkäytävien kapselointia yhteensopivasti.
+-✅ Tarkkaile huoltotarpeita – laiteräkkien sisäiset jäähdyttimet tarvitsevat erikoishuoltoa.
 
-Soveltuu erityisesti korkean tehotiheyden (high-density) ympäristöihin.
+-Odotetut tulokset:
+-👉 Erinomainen energiatehokkuus ja nopea vaste kuormamuutoksiin.
+-🔸 Menetelmä 3: Vapaajäähdytys (free cooling)
 
-Parhaat käytännöt:
-✅ Käytä kuuma- ja kylmäkäytävien kapselointia yhteensopivasti.
-✅ Tarkkaile huoltotarpeita – laiteräkkien sisäiset jäähdyttimet tarvitsevat erikoishuoltoa.
+-Kuvaus: Hyödynnetään ulkoilmaa tai kylmää vettä, kun ulkolämpötila sallii.
 
-Odotetut tulokset:
-👉 Erinomainen energiatehokkuus ja nopea vaste kuormamuutoksiin.
-🔸 Menetelmä 3: Vapaajäähdytys (free cooling)
+-Vaiheet:
+-Ulkoilma otetaan suoraan tai epäsuorasti käyttöön.
+-Ilmastointijärjestelmä vaihtaa vapaajäähdytykseen automaattisesti.
+-Käyttökelpoinen erityisesti pohjoisissa ilmastoissa.
 
-Kuvaus: Hyödynnetään ulkoilmaa tai kylmää vettä, kun ulkolämpötila sallii.
+-Parhaat käytännöt:
+-✅ Älä unohda kosteuden ja ilmanlaadun hallintaa ulkoilman käytössä.
+-✅ Hyödynnä energiatehokkuusraportteja (PUE-arvon parantaminen).
 
-Vaiheet:
+-Odotetut tulokset:
+-👉 Suuri säästö energiankulutuksessa etenkin kylminä kuukausina.
+�-� Kehittyneet strategiat
+-🔸 Hukkalämmön hyödyntäminen
 
-Ulkoilma otetaan suoraan tai epäsuorasti käyttöön.
+-Tarkoitus: Vähennetään hiilijalanjälkeä ottamalla talteen laitteiden tuottama lämpö esimerkiksi kiinteistöjen lämmitykseen.
 
-Ilmastointijärjestelmä vaihtaa vapaajäähdytykseen automaattisesti.
+-Toteutus:
 
-Käyttökelpoinen erityisesti pohjoisissa ilmastoissa.
+-Liitä jäähdytysjärjestelmä lämpöpumppuihin tai kaukolämpöverkkoon.
 
-Parhaat käytännöt:
-✅ Älä unohda kosteuden ja ilmanlaadun hallintaa ulkoilman käytössä.
-✅ Hyödynnä energiatehokkuusraportteja (PUE-arvon parantaminen).
+-Seuraa lämmön laatua ja siirrettävyyttä.
 
-Odotetut tulokset:
-👉 Suuri säästö energiankulutuksessa etenkin kylminä kuukausina.
-🚀 Kehittyneet strategiat
-🔸 Hukkalämmön hyödyntäminen
+-🔸 Automaatio ja DCIM-integraatio
 
-Tarkoitus: Vähennetään hiilijalanjälkeä ottamalla talteen laitteiden tuottama lämpö esimerkiksi kiinteistöjen lämmitykseen.
+-Tarkoitus: Jatkuva optimointi – anturien ja automaation avulla voidaan hienosäätää jäähdytysjärjestelmän toimintaa reaaliajassa.
 
-Toteutus:
+-Toteutus:
 
-Liitä jäähdytysjärjestelmä lämpöpumppuihin tai kaukolämpöverkkoon.
+-Käytä älykkäitä ohjausjärjestelmiä, jotka säätävät tuulettimia ja pumppuja dynaamisesti.
 
-Seuraa lämmön laatua ja siirrettävyyttä.
+-Monitoroi jatkuvasti lämpötilaeroja, paine-eroja ja kosteutta.
 
-🔸 Automaatio ja DCIM-integraatio
+-📆 Integrointirutiinit ja ylläpito
 
-Tarkoitus: Jatkuva optimointi – anturien ja automaation avulla voidaan hienosäätää jäähdytysjärjestelmän toimintaa reaaliajassa.
+-Aamurutiinit: Käy läpi jäähdytysjärjestelmän hälytykset ja poikkeamat.
 
-Toteutus:
+-Päivän aikana: Seuraa energiankulutusta ja jäähdytystehoa.
 
-Käytä älykkäitä ohjausjärjestelmiä, jotka säätävät tuulettimia ja pumppuja dynaamisesti.
+-Iltaisin: Tee pikakatsaus päivän kuormapiikkeihin ja jäähdytysjärjestelmän vasteisiin.
 
-Monitoroi jatkuvasti lämpötilaeroja, paine-eroja ja kosteutta.
+-Viikoittainen syvähuolto: Tarkista suodattimet, jäähdytysnesteet ja vedenlaatu.
 
-📆 Integrointirutiinit ja ylläpito
+-Kuukausittainen arviointi: Analysoi PUE-arvo ja tee hienosäätöjä.
 
-Aamurutiinit: Käy läpi jäähdytysjärjestelmän hälytykset ja poikkeamat.
+-⚠️ Yleisiä haasteita ja ratkaisuja
+-Haaste	Miksi syntyy?	Ratkaisu
+-Epätasainen ilmavirtaus	Räkki- tai käytäväjärjestelyn puutteet	Optimoi kuuma- ja kylmäkäytävät
+-Liiallinen energiankulutus	Ylisuunnitellut jäähdytysratkaisut	Säädä järjestelmän kapasiteetti tarpeen mukaan
+-Kondensaatio tai staattinen sähkö	Huono kosteus- ja lämpötilansäätö	Käytä ilmankosteuden hallintaa (40–60%)
+-🌟 Yhteenveto ja seuraavat askeleet
 
-Päivän aikana: Seuraa energiankulutusta ja jäähdytystehoa.
+-Jäähdytysjärjestelmät muodostavat datakeskuksen sydämen, joka varmistaa laitteiden luotettavan toiminnan. Ne vaikuttavat suoraan energiankulutukseen ja ympäristövaikutuksiin. Oikein mitoitettu ja ylläpidetty jäähdytysjärjestelmä ei ole pelkkä kustannus – se on investointi jatkuvaan toimintavarmuuteen.
 
-Iltaisin: Tee pikakatsaus päivän kuormapiikkeihin ja jäähdytysjärjestelmän vasteisiin.
+-Mitä seuraavaksi?
+-🔹 Arvioi nykyinen jäähdytysjärjestelmäsi tehokkuus (PUE-arvo).
+-🔹 Tunnista mahdollisuudet vapaajäähdytyksen tai hukkalämmön hyödyntämiseen.
+-🔹 Kartoita automaation mahdollisuudet jäähdytyksen optimointiin.
 
-Viikoittainen syvähuolto: Tarkista suodattimet, jäähdytysnesteet ja vedenlaatu.
+-**Uusiutuva energia**: Sähkö tuulipuistoista, aurinkopaneeleista tai muista uusiutuvista lähteistä.
+-Mikä on uusiutuvan energian merkitys datakeskuksissa?
 
-Kuukausittainen arviointi: Analysoi PUE-arvo ja tee hienosäätöjä.
+-Datakeskukset kuluttavat valtavia määriä sähköä, mikä tekee niiden energiankäytöstä merkittävän osan koko IT-alan hiilijalanjälkeä. Uusiutuvan energian käyttö – esimerkiksi tuulipuistot, aurinkopaneelit ja vesivoima – on keskeinen keino vähentää näitä päästöjä ja saavuttaa kestäviä ICT-ratkaisuja.
+-Perusta ja kehitys
 
-⚠️ Yleisiä haasteita ja ratkaisuja
-Haaste	Miksi syntyy?	Ratkaisu
-Epätasainen ilmavirtaus	Räkki- tai käytäväjärjestelyn puutteet	Optimoi kuuma- ja kylmäkäytävät
-Liiallinen energiankulutus	Ylisuunnitellut jäähdytysratkaisut	Säädä järjestelmän kapasiteetti tarpeen mukaan
-Kondensaatio tai staattinen sähkö	Huono kosteus- ja lämpötilansäätö	Käytä ilmankosteuden hallintaa (40–60%)
-🌟 Yhteenveto ja seuraavat askeleet
+ -🌍 Ympäristötavoitteet: Ilmastotavoitteet, kuten EU:n hiilineutraaliustavoite vuoteen 2050 mennessä, painottavat uusiutuvan energian käyttöä kaikilla toimialoilla.
+-🏭 Energiaintensiivisyys: Datakeskukset kuluttavat yhä enemmän energiaa pilvipalveluiden ja tekoälyn kasvaessa.
+-💡 Teknologinen kehitys: Nykyään uusiutuvan energian ratkaisut ovat entistä kilpailukykyisempiä ja teknisesti luotettavia myös suurten datakeskusten tarpeisiin.
 
-Jäähdytysjärjestelmät muodostavat datakeskuksen sydämen, joka varmistaa laitteiden luotettavan toiminnan. Ne vaikuttavat suoraan energiankulutukseen ja ympäristövaikutuksiin. Oikein mitoitettu ja ylläpidetty jäähdytysjärjestelmä ei ole pelkkä kustannus – se on investointi jatkuvaan toimintavarmuuteen.
+-Tämä osa tarjoaa sinulle kattavan näkymän uusiutuvan energian hyödyntämiseen datakeskuksissa: periaatteet, parhaat käytännöt, tehokkaimmat menetelmät ja strategiat – sekä konkreettisia askeleita, joilla voit siirtyä puhtaampaan energiantuotantoon.
+-🌟 Uusiutuvan energian perusperiaatteet datakeskuksissa
+-🔹 Periaate 1: Energian lähteiden monipuolistaminen
+-Selitys: Uusiutuvan energian saatavuus vaihtelee paikallisesti ja ajallisesti – siksi lähteiden yhdistäminen varmistaa jatkuvan energiansaannin.
 
-Mitä seuraavaksi?
-🔹 Arvioi nykyinen jäähdytysjärjestelmäsi tehokkuus (PUE-arvo).
-🔹 Tunnista mahdollisuudet vapaajäähdytyksen tai hukkalämmön hyödyntämiseen.
-🔹 Kartoita automaation mahdollisuudet jäähdytyksen optimointiin.
+-Käytännön sovellus:
+-✅ Käytä tuuli- ja aurinkoenergian yhdistelmää täydentämään toisiaan (esim. yöllä tuuli korvaa auringon puuttumisen).
+-✅ Mahdollisuuksien mukaan hyödynnä myös bioenergiaa tai vesivoimaa tasapainottamaan tarjontaa.
 
-**Uusiutuva energia**: Sähkö tuulipuistoista, aurinkopaneeleista tai muista uusiutuvista lähteistä.
-Mikä on uusiutuvan energian merkitys datakeskuksissa?
 
-Datakeskukset kuluttavat valtavia määriä sähköä, mikä tekee niiden energiankäytöstä merkittävän osan koko IT-alan hiilijalanjälkeä. Uusiutuvan energian käyttö – esimerkiksi tuulipuistot, aurinkopaneelit ja vesivoima – on keskeinen keino vähentää näitä päästöjä ja saavuttaa kestäviä ICT-ratkaisuja.
-Perusta ja kehitys
+-🔹 Periaate 2: Paikallisen ja verkon kautta tulevan uusiutuvan energian käyttö
 
-    🌍 Ympäristötavoitteet: Ilmastotavoitteet, kuten EU:n hiilineutraaliustavoite vuoteen 2050 mennessä, painottavat uusiutuvan energian käyttöä kaikilla toimialoilla.
+-Selitys: Datakeskus voi hyödyntää uusiutuvaa energiaa suoraan omasta tuotannosta tai ostaa sitä sähköverkosta (esim. sertifioidut vihreät sähkötuotteet).
 
-    🏭 Energiaintensiivisyys: Datakeskukset kuluttavat yhä enemmän energiaa pilvipalveluiden ja tekoälyn kasvaessa.
+-Käytännön sovellus:
+-✅ Asenna omia aurinkopaneeleja palvelinsalin katolle tai lähelle.
+-✅ Tee pitkäaikaisia virtuaalisia PPA-sopimuksia (Power Purchase Agreement) tuuli- tai aurinkopuistojen kanssa.
+-🔹 Periaate 3: Energiankäytön ja uusiutuvan tuotannon tasapainotus
 
-    💡 Teknologinen kehitys: Nykyään uusiutuvan energian ratkaisut ovat entistä kilpailukykyisempiä ja teknisesti luotettavia myös suurten datakeskusten tarpeisiin.
+-Selitys: Uusiutuvan energian tuotanto ei aina vastaa kuormaa – tasapainotusratkaisut (esim. akustot, kysyntäjoustot) varmistavat luotettavan sähkönsyötön.
 
-Tämä osa tarjoaa sinulle kattavan näkymän uusiutuvan energian hyödyntämiseen datakeskuksissa: periaatteet, parhaat käytännöt, tehokkaimmat menetelmät ja strategiat – sekä konkreettisia askeleita, joilla voit siirtyä puhtaampaan energiantuotantoon.
-🌟 Uusiutuvan energian perusperiaatteet datakeskuksissa
-🔹 Periaate 1: Energian lähteiden monipuolistaminen
+-Käytännön sovellus:
+-✅ Käytä akkuvarastoja tasaamaan tuotannon ja kulutuksen eroja.
+-✅ Integroi älykkäät ohjausjärjestelmät (esim. DCIM) sähkönkäyttöön ja kuormanhallintaan.
+-⚡ Tehokkaimmat menetelmät uusiutuvan energian käyttöön
+-🔸 Menetelmä 1: Suora oma tuotanto (aurinkopaneelit)
 
-Selitys: Uusiutuvan energian saatavuus vaihtelee paikallisesti ja ajallisesti – siksi lähteiden yhdistäminen varmistaa jatkuvan energiansaannin.
+-Kuvaus: Datakeskuksen omalle katolle tai tontille asennetut aurinkopaneelit tuottavat sähköä suoraan palvelinten käyttöön.
 
-Käytännön sovellus:
-✅ Käytä tuuli- ja aurinkoenergian yhdistelmää täydentämään toisiaan (esim. yöllä tuuli korvaa auringon puuttumisen).
-✅ Mahdollisuuksien mukaan hyödynnä myös bioenergiaa tai vesivoimaa tasapainottamaan tarjontaa.
-🔹 Periaate 2: Paikallisen ja verkon kautta tulevan uusiutuvan energian käyttö
+-Vaiheet:
+-1️⃣ Suunnittele ja mitoita aurinkovoimajärjestelmä (tarvittava kapasiteetti, sijainti).
+-2️⃣ Asenna invertterit ja liitä järjestelmä datakeskuksen sähköverkkoon.
+-3️⃣ Valvo ja optimoi tuotantoa (esim. älykkäät inverterit ja seurantajärjestelmät).
 
-Selitys: Datakeskus voi hyödyntää uusiutuvaa energiaa suoraan omasta tuotannosta tai ostaa sitä sähköverkosta (esim. sertifioidut vihreät sähkötuotteet).
+-Parhaat käytännöt:
+-✅ Varmista katon tai maapohjan kantavuus ja esteetön aurinkoaltistus.
+-✅ Käytä korkealaatuisia paneeleita, joilla on hyvä hyötysuhde.
+-✅ Huolehdi paneelien puhdistuksesta ja kunnossapidosta.
 
-Käytännön sovellus:
-✅ Asenna omia aurinkopaneeleja palvelinsalin katolle tai lähelle.
-✅ Tee pitkäaikaisia virtuaalisia PPA-sopimuksia (Power Purchase Agreement) tuuli- tai aurinkopuistojen kanssa.
-🔹 Periaate 3: Energiankäytön ja uusiutuvan tuotannon tasapainotus
+-Odotetut tulokset: 
+-👉  Osa energiasta tuotetaan päästöttömästi paikan päällä.
+-🔸 Menetelmä 2: Pitkäaikaiset PPA-sopimukset (tuulipuistot)
 
-Selitys: Uusiutuvan energian tuotanto ei aina vastaa kuormaa – tasapainotusratkaisut (esim. akustot, kysyntäjoustot) varmistavat luotettavan sähkönsyötön.
+-Kuvaus: Sähkösopimukset uusiutuvan energian tuottajien kanssa varmistavat, että datakeskuksen kuluttama sähkö tulee vihreistä lähteistä.
 
-Käytännön sovellus:
-✅ Käytä akkuvarastoja tasaamaan tuotannon ja kulutuksen eroja.
-✅ Integroi älykkäät ohjausjärjestelmät (esim. DCIM) sähkönkäyttöön ja kuormanhallintaan.
-⚡ Tehokkaimmat menetelmät uusiutuvan energian käyttöön
-🔸 Menetelmä 1: Suora oma tuotanto (aurinkopaneelit)
+-Vaiheet:
+- 1️⃣  Neuvottele PPA-sopimus tuulipuiston (tai aurinkopuiston) kanssa.
+- 2️⃣  Määrittele toimitusmäärät ja -ajat sopimuksessa.
+- 3️⃣ Hallitse sopimuksen toteutusta ja varmista uusiutuvan alkuperä.
 
-Kuvaus: Datakeskuksen omalle katolle tai tontille asennetut aurinkopaneelit tuottavat sähköä suoraan palvelinten käyttöön.
+-Parhaat käytännöt:
+-✅ Pidä sopimus pitkäaikaisena (esim. 10–20 vuotta) vakauden takaamiseksi.
+-✅ Hyödynnä sertifioituja alkuperätakuita (Guarantees of Origin).
+-✅ Tarkista tuottajan luotettavuus ja tekninen valmius.
 
-Vaiheet:
-1️⃣ Suunnittele ja mitoita aurinkovoimajärjestelmä (tarvittava kapasiteetti, sijainti).
-2️⃣ Asenna invertterit ja liitä järjestelmä datakeskuksen sähköverkkoon.
-3️⃣ Valvo ja optimoi tuotantoa (esim. älykkäät inverterit ja seurantajärjestelmät).
+-Odotetut tulokset:
+- 👉 Vihreä sähköosuus nousee merkittävästi ilman omia investointeja tuotantolaitteisiin.
+-🔸 Menetelmä 3: Energian varastointi (akustot)
 
-Parhaat käytännöt:
-✅ Varmista katon tai maapohjan kantavuus ja esteetön aurinkoaltistus.
-✅ Käytä korkealaatuisia paneeleita, joilla on hyvä hyötysuhde.
-✅ Huolehdi paneelien puhdistuksesta ja kunnossapidosta.
+-Kuvaus: Akut tasapainottavat uusiutuvan energian tuotannon vaihtelua ja parantavat toimitusvarmuutta.
 
-Odotetut tulokset:
-👉 Osa energiasta tuotetaan päästöttömästi paikan päällä.
-🔸 Menetelmä 2: Pitkäaikaiset PPA-sopimukset (tuulipuistot)
+-Vaiheet:
+-1️⃣ Määrittele tarvittava varastointikapasiteetti.
+-2️⃣  Valitse akkuteknologia (litiumioni, virtausakut tms.).
+-3️⃣ Liitä akusto datakeskuksen sähköverkkoon ja automaatiojärjestelmään.
 
-Kuvaus: Sähkösopimukset uusiutuvan energian tuottajien kanssa varmistavat, että datakeskuksen kuluttama sähkö tulee vihreistä lähteistä.
+-Parhaat käytännöt:
+-✅ Yhdistä akkujen hallinta älykkääseen kuormantasaukseen.
+-✅ Suunnittele turvallisuusprosessit akustojen käytölle (esim. paloturvallisuus).
+-✅ Huolehdi akun käyttöiän maksimoimisesta (esim. oikeat latausprofiilit).
 
-Vaiheet:
-1️⃣ Neuvottele PPA-sopimus tuulipuiston (tai aurinkopuiston) kanssa.
-2️⃣ Määrittele toimitusmäärät ja -ajat sopimuksessa.
-3️⃣ Hallitse sopimuksen toteutusta ja varmista uusiutuvan alkuperä.
+-Odotetut tulokset:
+- 👉 Joustavampi uusiutuvan energian käyttö ja parempi käyttövarmuus.
+- 🚀 Kehittyneet strategiat ja tulevaisuuden mahdollisuudet
+-🔹 Strategia 1: Lämpöenergian hybridikäyttö
 
-Parhaat käytännöt:
-✅ Pidä sopimus pitkäaikaisena (esim. 10–20 vuotta) vakauden takaamiseksi.
-✅ Hyödynnä sertifioituja alkuperätakuita (Guarantees of Origin).
-✅ Tarkista tuottajan luotettavuus ja tekninen valmius.
+-Tarkoitus: Käytä uusiutuvan sähkön lisäksi palvelinten hukkalämpö kiinteistöjen lämmitykseen.
 
-Odotetut tulokset:
-👉 Vihreä sähköosuus nousee merkittävästi ilman omia investointeja tuotantolaitteisiin.
-🔸 Menetelmä 3: Energian varastointi (akustot)
+-Menetelmä:
+-Liitä datakeskus lämmönkeruujärjestelmään.
+-Käytä lämpöpumppuja siirtoon rakennusten lämmitysverkkoon.
 
-Kuvaus: Akut tasapainottavat uusiutuvan energian tuotannon vaihtelua ja parantavat toimitusvarmuutta.
+-Hyödyt:
+-✅ Vähentää päästöjä laajemmin kuin pelkkä sähköntuotanto.
+-✅ Parantaa kokonaisenergiatehokkuutta.
+-🔹 Strategia 2: Älykäs kysyntäjoustaminen
 
-Vaiheet:
-1️⃣ Määrittele tarvittava varastointikapasiteetti.
-2️⃣ Valitse akkuteknologia (litiumioni, virtausakut tms.).
-3️⃣ Liitä akusto datakeskuksen sähköverkkoon ja automaatiojärjestelmään.
-
-Parhaat käytännöt:
-✅ Yhdistä akkujen hallinta älykkääseen kuormantasaukseen.
-✅ Suunnittele turvallisuusprosessit akustojen käytölle (esim. paloturvallisuus).
-✅ Huolehdi akun käyttöiän maksimoimisesta (esim. oikeat latausprofiilit).
-
-Odotetut tulokset:
-👉 Joustavampi uusiutuvan energian käyttö ja parempi käyttövarmuus.
-🚀 Kehittyneet strategiat ja tulevaisuuden mahdollisuudet
-🔹 Strategia 1: Lämpöenergian hybridikäyttö
-
-Tarkoitus: Käytä uusiutuvan sähkön lisäksi palvelinten hukkalämpö kiinteistöjen lämmitykseen.
-
-Menetelmä:
-Liitä datakeskus lämmönkeruujärjestelmään.
-Käytä lämpöpumppuja siirtoon rakennusten lämmitysverkkoon.
-
-Hyödyt:
-✅ Vähentää päästöjä laajemmin kuin pelkkä sähköntuotanto.
-✅ Parantaa kokonaisenergiatehokkuutta.
-🔹 Strategia 2: Älykäs kysyntäjoustaminen
-
-Tarkoitus: Sovittaa kuormia uusiutuvan tuotannon mukaan (esim. siirrä ei-kriittisiä tehtäviä, kun uusiutuvaa on paljon tarjolla).
+-Tarkoitus: Sovittaa kuormia uusiutuvan tuotannon mukaan (esim. siirrä ei-kriittisiä tehtäviä, kun uusiutuvaa on paljon tarjolla).
 
 Menetelmä:
 
