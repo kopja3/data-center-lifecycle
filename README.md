@@ -39,12 +39,17 @@ Kaksinkertainen lattiarakenne: Monissa datakeskuksissa on korotettu lattia. Sen 
 
 2. Sähkönsyöttö ja varavoima
    
-Datakeskuksessa on kaksi toisistaan riippumatonta sähkönsyöttöä (A- ja B-syötöt), jotka jaetaan erillisiin pää- ja jakokeskuksiin sekä laitteiden PDU-yksiköihin. UPS-järjestelmät turvaavat hetkellisen varavirtasyötön sähköhäiriöiden aikana. Pidempiä katkoksia varten käytetään varavoimageneraattoreita, jotka käynnistyvät automaattisesti. Kaikki järjestelmät on maadoitettu ja varustettu ylijännitesuojauksella. Hälytykset ja valvonta varmistavat, että poikkeamat huomataan nopeasti.
+Datakeskuksessa on kaksi toisistaan riippumatonta sähkönsyöttöä (A- ja B-syötöt), jotka jaetaan erillisiin pää- ja jakokeskuksiin sekä laitteiden PDU-yksiköihin. UPS-järjestelmät turvaavat hetkellisen varavirtasyötön sähköhäiriöiden aikana. Pidempiä katkoksia varten käytetään varavoimageneraattoreita, jotka käynnistyvät automaattisesti. 
+Kaikki järjestelmät on maadoitettu ja varustettu ylijännitesuojauksella. Hälytykset ja valvonta varmistavat, että poikkeamat huomataan nopeasti.
+
 Primäärinen sähkönsyöttö: Datakeskus on kytketty sähköverkkoon useilla syöttöyhteyksillä. Tyypillisesti käytössä on kaksi toisistaan riippumatonta syöttöä sähköverkosta, jotta verkkosähköä saadaan kahdesta suunnasta (A- ja B-syötöt). Tämä varmistaa, että vaikka toinen syöttö katkeaisi, toinen voi pitää laitteet toiminnassa.
+
 Keskeytymätön virtalähde (UPS): UPS-laitteet (Uninterruptible Power Supply) tarjoavat akuston avulla hetkellisen varavirtalähteen, jos primäärisessä sähkössä tapahtuu häiriö. UPS tasoittaa jännitepiikkejä ja -katkoja ja antaa riittävästi aikaa käynnistää varavoimageneraattorit ilman, että palvelimet huomaavat katkosta.
+
 Varavoimageneraattorit: Dieselgeneraattorit (tai muu varavoima, kuten kaasugeneraattorit) käynnistyvät automaattisesti laajemmassa sähkökatkossa. Ne pystyvät tuottamaan sähköä koko datakeskuksen kuormalle pitkiäkin aikoja, yleensä polttoainesäiliöiden ansiosta useiksi tunneiksi tai päiviksi. Generaattorit testataan säännöllisesti, jotta ne toimivat varmasti hätätilanteessa.
+
 Sähkönjakelu ja redundanssi: Sähkö jaetaan datakeskuksessa varmistetusti. Jokaiselle räkkikaapille tuodaan yleensä kaksi erillistä syöttöä (yhdistettynä kahdentaviin PDU-virtajakoyksiköihin), jolloin yksittäisen sähkönjakelukomponentin vikaantuessa toinen syöttö jatkaa sähkönsyöttöä. Koko sähköjärjestelmä on suunniteltu N+1- tai 2N-periaatteella, eli siinä on ylimääräistä kapasiteettia tai rinnakkaiset järjestelmät jatkuvuuden takaamiseksi.
-Jäähdytys- ja ilmastointijärjestelmät
+
 
 (Sähkönsyötön varmistusjärjestelmät takaavat, että palvelimet pysyvät käynnissä kaikissa tilanteissa. Kahdennetut syötöt, UPSit ja varavoima muodostavat ketjun, joka on yhtä vahva kuin sen vahvin lenkki – ja datakeskuksissa jokainen lenkki on suunniteltu kestämään. Seuraavaksi tarkastellaan, kuinka yhtä lailla kriittinen jäähdytys huolehtii siitä, että laitteet eivät ylikuumene.)
 
@@ -57,7 +62,6 @@ Verkkolaitteet: Kytkimet, reitittimet ja muut verkkokomponentit liittävät palv
 Ulkomaailman yhteydet: Datakeskuksen palvelut ovat hyödytöntä ilman luotettavia tietoliikenneyhteyksiä. Datakeskukset on kytketty internetiin ja mahdollisiin yksityisiin verkkoihin useiden operaattoreiden kautta. Yhteydet toteutetaan useilla fyysisillä reiteillä (esim. moninkertaiset valokuitukaapelit eri reittejä pitkin), jotta yhden reitin katkeaminen ei eristä datakeskusta.
 Kahdennetut verkkoyhteydet: Yhteydet suunnitellaan kahdennetuiksi (redundant) ja varmennetuiksi. Käytössä voi olla esimerkiksi kaksi tai useampi erillinen reititin ja kytkinyhteys eri palveluntarjoajille, jotka jakavat verkkokuorman. Vikatilanteessa toinen yhteys jatkaa liikennöintiä automaattisesti. Tämä takaa, että data kulkee sisään ja ulos datakeskuksesta 24/7.
 Sisäverkon kapasiteetti: Myös datakeskuksen sisäinen tietoverkko on suunniteltu korkealle kaistalle ja matalalle viiveelle, jotta valtavat datamäärät liikkuvat sujuvasti. Konesalin sisällä on nopeat runkoyhteydet palvelinriviä ja -kaappeja yhdistäville kytkimille. Verkon laitteissa on usein ylimääräisiä portteja ja linkkikapasiteettia, jotta kasvunvaraa ja vikasietoisuutta on riittävästi.
-Turvallisuusjärjestelmät
 
 (ICT-laitteiden ja tietoliikenteen osuus takaa, että datakeskus pystyy suorittamaan varsinaisen tehtävänsä: datan tallennuksen, käsittelyn ja siirron luotettavasti. Jotta tämä on mahdollista ympäri vuorokauden, laitteiston on saatava keskeytyksettä virtaa ja riittävä jäähdytys, ja niiden toiminnasta on oltava jatkuva näkyvyys – nämä seikat käsitellään seuraavaksi.)
 
@@ -65,32 +69,48 @@ Turvallisuusjärjestelmät
 4. Jäähdytys- ja ilmastointijärjestelmät
 
 Jäähdytysjärjestelmät ylläpitävät laitteiden toimintalämpötilan ja ilmankosteuden. Palvelinsalien ilmastointia hoitavat CRAC-/CRAH-yksiköt, jotka hyödyntävät kylmävesi- tai glykolijäähdytystä. Lämpö siirretään ulkoilmaan jäähdytystornien tai kuivasäteilijöiden avulla. Järjestelmät on kahdennettu ja suunniteltu energiatehokkaiksi. Hukkalämmön hyödyntäminen esimerkiksi kiinteistön lämmitykseen vähentää ympäristökuormaa.
+
 Ilmastointi ja lämpötilanhallinta: Palvelinsalit on varustettu tehokkailla jäähdytys- ja ilmanvaihtojärjestelmillä, jotka ylläpitävät tasaista viileää lämpötilaa (tyypillisesti noin 18–27°C) ja sopivaa ilmankosteutta ympäri vuorokauden. Ilmastointijärjestelmät kierrättävät ilmaa jatkuvasti suodattaen pölyä ja tuoden raitista ilmaa tarvittaessa.
+
 CRAC- ja CRAH-yksiköt: (Computer Room Air Conditioning / Air Handling) Palvelinsaleissa käytetään erillisiä jäähdytysyksiköitä, jotka viilentävät ilmaa. CRAC-yksiköt hyödyntävät kylmäaine- tai jäähdytysnestekiertoa poistaakseen lämpöä, ja CRAH-yksiköt puolestaan käyttävät rakennuksen jäähdytettyä vettä lämmön siirtämiseen. Nämä laitteet sijoitetaan usein palvelinsalin reunoille tai rivien väleihin ja puhaltavat kylmän ilman palvelinlaitteiden ottoaukkoihin.
+
 Kylmä vesi ja jäähdytystornit: Datakeskuksen jäähdytysjärjestelmässä voi olla keskitetty jäähdytyskoneikko (chiller), joka tuottaa kylmää vettä. Kylmä vesi kiertää palvelinsalien ilmajäähdyttimille, ja lämpö siirretään ulkona sijaitseviin jäähdytystorneihin tai kuivasäteilijöihin, jotka luovuttavat lämmön ulkoilmaan. Järjestelmässä on usein useita rinnakkaisia chiller-yksiköitä ja pumppuja, jotta yhden vikaantuessa muut jatkavat jäähdytystä (N+1-redundanssi).
+
 Kuuma- ja kylmäkäytäväjärjestely: Laiteräkit on yleensä aseteltu siten, että muodostuu erilliset kylmäkäytävät (räkkirivien edustat, joihin kylmä ilma johdetaan) ja kuumakäytävät (räkkirivien taustat, joista lämmin poistoilma kerätään). Tällä rakenteellisella ratkaisulla estetään kuuman ja kylmän ilman sekoittuminen ja tehostetaan jäähdytystä. Kuumakäytävät voidaan jopa kapseloida ja kuuma ilma ohjata suoraan jäähdytysjärjestelmään, jolloin jäähdytys toimii energiatehokkaammin.
+
 Kosteudenhallinta: Jäähdytysjärjestelmä sisältää myös ilmankosteuden säätelyn. Liian kuiva ilma lisää staattisen sähkön riskiä ja liian kostea voi aiheuttaa laitteisiin kondensaatiota. Ilmankostuttimet tai kuivaimet varmistavat, että ilmankosteus pysyy suositellulla tasolla (esim. 40–60 %) jatkuvasti.
+
 (Jäähdytysjärjestelmät siis varmistavat, että IT-laitteet pysyvät viileinä ja toimintakykyisinä ympäri vuorokauden. Yhdessä sähkönsyötön kanssa ne muodostavat datakeskuksen “ylläpitoinfrastruktuurin”, joka huolehtii laitteiden perusedellytyksistä.)
 
 6. Turvallisuus- ja valvontajärjestelmät
 
 Fyysinen turvallisuus kattaa kulunvalvonnan, kameravalvonnan ja vahvistetut rakenteet. Paloturvallisuus perustuu varhaisiin ilmaisimiin ja kaasusammutusjärjestelmiin. Ympäristöolosuhteita ja sähkönsyöttöä seurataan jatkuvasti antureilla ja valvontajärjestelmillä. Keskitetty valvomo tai NOC huolehtii hälytyksiin reagoimisesta ympäri vuorokauden. Kaikki järjestelmät tukevat luotettavaa ja keskeytymätöntä toimintaa.
+
 Kulunvalvonta: Datakeskuksen fyysinen turvallisuus on kriittistä, jotta luvattomat henkilöt eivät pääse laitteisiin käsiksi. Kulunvalvontajärjestelmä valvoo kaikkia ovia ja alueita – datakeskukseen pääsy vaatii henkilökohtaisen tunnisteen (kuten kulkukortin, PIN-koodin tai biometrisen tunnisteen). Järjestelmä tallentaa käyntilokit, ja käyttöoikeudet on rajattu vain välttämättömille henkilöille ja alueille.
+
 Videovalvonta: Kamerajärjestelmät seuraavat datakeskuksen tiloja ympäri vuorokauden. Valvontakamerat kattavat sisäänkäynnit, käytävät, laitetilat ja kriittiset kohdat. Kuvamateriaali tallennetaan ja sitä valvotaan aktiivisesti tai analysoidaan tarvittaessa jälkikäteen, mikä lisää turvallisuutta ja toimii pelotteena luvattomalle toiminnalle.
+
 Murto- ja ympäristöhälyttimet: Datakeskuksessa on murtohälytysjärjestelmä, joka reagoi esimerkiksi oven pakottamiseen, lasin rikkoutumiseen tai liikkeeseen kielletyllä alueella. Lisäksi turvajärjestelmiin kuuluu ympäristöhälyttimiä, kuten tunnistimet tulvimisen tai savun havaitsemiseen. Hälytykset on kytketty vartiointiin tai päivystyskeskukseen, joka reagoi viipymättä.
+
 Fyysisen rakenteen turvallisuus: Itse rakennus on suunniteltu kestämään ulkoisia uhkia. Datakeskuksen seinät, ovet ja lattiat ovat usein vahvistettuja ja paloturvallisia. Monesti laitetilat sijaitsevat rakennuksen sisäosissa ilman ulkoseiniä, mikä lisää suojaa. Myös varajäähdytys ja varavirtalaitteet on suojattu erillisissä tiloissa, jotta sabotaasi tai onnettomuus ei lamauta kriittisiä järjestelmiä.
 Paloturvajärjestelmät
 
 Palonilmaisimet: Datakeskuksessa käytetään herkästi ja nopeasti reagoivia palonilmaisujärjestelmiä. Tyypillisesti asennetaan sekä perinteisiä savuilmaisimia että aktiivisia järjestelmiä, kuten ilmansamplausilmaisimet (VESDA), jotka imuroivat jatkuvasti ilmaa ja havaitsevat savuhiukkaset jo ennen näkyvää savua. Varhaisen varoituksen avulla ehditään reagoida ennen kuin palo pääsee valloilleen.
+
 Automaattiset sammutusjärjestelmät: Palon sattuessa datakeskuksessa on automaattinen sammutusjärjestelmä. Yleisiä ratkaisuja ovat kaasusammutusjärjestelmät, jotka vapauttavat inerttiä kaasua (esim. argon-, typpi- tai hiilidioksidipohjaisia seoksia) tulipaloalueelle. Kaasu tukahduttaa palon poistamalla hapen tai viilentämällä palotilaa aiheuttamatta laitevaurioita vedestä. Joissain tapauksissa on myös vesisprinklerit tai sumusammutus, yleensä esitoiminnalliset sprinklerit, jotka aktivoituvat vasta, kun lämpötila nousee tarpeeksi korkeaksi – tämä estää turhat vedenvahingot.
+
 Palosegmentointi: Rakennus ja palvelinsalit on jaettu paloalueisiin, jotta mahdollinen tulipalo rajoittuu pieneen osaan eikä leviä koko datakeskukseen. Paloseinät, -ovet ja -läpiviennit on toteutettu standardien mukaan (esim. 60 min tai 120 min paloeristys). Tämä antaa myös sammutusjärjestelmille ja pelastushenkilökunnalle aikaa reagoida ennen kuin kriittiset laitteet vaarantuvat laajemmin.
+
 Savunpoisto ja hätäilmanvaihto: Jos paloa syntyy, datakeskuksessa voi olla savunpoistojärjestelmä tai hätäilmanvaihto, joka käynnistyy poistaen savukaasuja tiloista. Näin turvataan ihmisten poistuminen ja laitteiden vahingot jäävät pienemmiksi. Savunpoisto toimii yhdessä paloilmaisimien ja sammutusjärjestelmien kanssa automaattisesti.
-Valvonta- ja hallintajärjestelmät
 
 Ympäristövalvonta: Kaikkia kriittisiä olosuhteita seurataan jatkuvasti. Anturit mittaavat lämpötilaa, ilmankosteutta, ilman virtausta, ilmanpaine-eroja (esim. kylmä- ja kuumakäytävien välillä) sekä havaitsevat mahdolliset vesivuodot tai muut ympäristömuutokset. Nämä sensorit kytkeytyvät automaatiojärjestelmään, joka hälyttää heti, jos arvot poikkeavat sallituista rajoista.
+
 Infrastruktuurin hallinta (DCIM): Datakeskuksissa käytetään usein keskitettyjä hallintajärjestelmiä, kuten DCIM (Data Center Infrastructure Management) tai rakennusautomaatiojärjestelmiä. Niiden avulla operoidaan sähkö-, jäähdytys- ja turvajärjestelmiä yhtenäisesti. Käyttöliittymästä voidaan nähdä laitteiden tilat, energiankulutus, lämpötila- ja kosteusjakaumat sekä mahdolliset hälytykset reaaliajassa.
+
 Laitteiden ja verkon monitorointi: Myös itse ICT-laitteiden toiminta on valvonnassa. Palvelimien, tallennuslaitteiden ja verkkokomponenttien kuntoa ja suorituskykyä seurataan (esim. palvelinten prosessorikuorma, muistin käyttö, verkkoliikenteen määrät). Monitorointiohjelmistot hälyttävät, jos jokin laite kaatuu, kuormittuu liikaa tai jos yhteyksissä on ongelmia. Näin ylläpitohenkilöstö voi puuttua ongelmiin ennen kuin ne aiheuttavat käyttökatkoa.
+
 Hälytykset ja reagointi: Kaikki valvontajärjestelmien keräämät hälytykset kootaan hälytysjärjestelmään, joka voi ilmoittaa päivystäville teknikoille tekstiviestillä, sähköpostilla tai muulla tavalla. Monissa datakeskuksissa on 24/7 miehitys tai vähintään päivystysrinki, joka reagoi hälytyksiin välittömästi. Nopea reagointi yhdistettynä automaattisiin varajärjestelmiin varmistaa, että pienetkin viat tai poikkeamat korjataan ennen kuin ne eskaloituvat vakaviksi ongelmiksi.
+
 (Turvallisuus- ja valvontajärjestelmät varmistavat, että datakeskuksen toiminta ei keskeydy inhimillisten tai ympäristöllisten riskien takia. Fyysiset uhat, kuten tunkeutuminen tai tulipalo, pidetään hallinnassa, ja teknisten järjestelmien tilaa seurataan herkeämättä. Tämä monitasoinen turvaverkko täydentää datakeskuksen kokonaisuutta siten, että kaikki edellä kuvatut osa-alueet – tilat, laitteet, sähkö, jäähdytys ja turvallisuus – toimivat yhdessä luotettavasti.)
 
 Yhteenveto
