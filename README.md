@@ -30,22 +30,27 @@ Vihreä datakeskus on suunniteltu ja sen mekaaniset, sähköiset ja tietojärjes
 
 ---
 1. Konesalitilat ja rakenteet
+   
 Datakeskuksen palvelinsalit ovat lämpötilaltaan ja kosteudeltaan hallittuja tiloja, joissa laitteiden sijoittelu tukee tehokasta ilmankiertoa. Palvelinsaleissa käytetään kuuma-/kylmäkäytäväperiaatetta ja vahvistettua lattiarakennetta, jonka alla kulkee kaapelointi ja jäähdytysilmavirta. Keskuksen tukitiloissa on mm. sähkö- ja jäähdytyslaitteet sekä kaapelointioperaattoreiden tilat. Rakennus on palo-osastoitu ja varustettu kulkureiteillä huoltoa ja laajennuksia varten.
 (Konesalitilojen huolellinen suunnittelu varmistaa, että IT-laitteisto toimii optimaalisissa olosuhteissa. Se luo pohjan muille järjestelmille, kuten sähkölle ja jäähdytykselle, jotka integroituvat rakenteisiin.)
 
 2. Sähkönsyöttö ja varavoima
+   
 Datakeskuksessa on kaksi toisistaan riippumatonta sähkönsyöttöä (A- ja B-syötöt), jotka jaetaan erillisiin pää- ja jakokeskuksiin sekä laitteiden PDU-yksiköihin. UPS-järjestelmät turvaavat hetkellisen varavirtasyötön sähköhäiriöiden aikana. Pidempiä katkoksia varten käytetään varavoimageneraattoreita, jotka käynnistyvät automaattisesti. Kaikki järjestelmät on maadoitettu ja varustettu ylijännitesuojauksella. Hälytykset ja valvonta varmistavat, että poikkeamat huomataan nopeasti.
 (Sähkönsyötön varmistusjärjestelmät takaavat, että palvelimet pysyvät käynnissä kaikissa tilanteissa. Kahdennetut syötöt, UPSit ja varavoima muodostavat ketjun, joka on yhtä vahva kuin sen vahvin lenkki – ja datakeskuksissa jokainen lenkki on suunniteltu kestämään. Seuraavaksi tarkastellaan, kuinka yhtä lailla kriittinen jäähdytys huolehtii siitä, että laitteet eivät ylikuumene.)
 
-4. ICT-laitteet ja tietoliikenne
+3. ICT-laitteet ja tietoliikenne
+
 Palvelimet hoitavat laskentaa ja datankäsittelyä, tallennusjärjestelmät varmistavat datan saatavuuden ja verkkolaitteet (kytkimet, reitittimet) liittävät kokonaisuuden sisäisiin ja ulkoisiin yhteyksiin. Laitteet on sijoitettu räkkikaappeihin, ja sisäinen kaapelointi on selkeästi järjestetty. Tietoliikenneyhteydet on kahdennettu, ja verkkoinfrastruktuuria hallitaan DCIM-järjestelmillä ja muilla työkaluilla. Verkkoarkkitehtuuri mahdollistaa suuren kaistanleveyden ja matalan viiveen.
 (ICT-laitteiden ja tietoliikenteen osuus takaa, että datakeskus pystyy suorittamaan varsinaisen tehtävänsä: datan tallennuksen, käsittelyn ja siirron luotettavasti. Jotta tämä on mahdollista ympäri vuorokauden, laitteiston on saatava keskeytyksettä virtaa ja riittävä jäähdytys, ja niiden toiminnasta on oltava jatkuva näkyvyys – nämä seikat käsitellään seuraavaksi.)
 
-5. Jäähdytys- ja ilmastointijärjestelmät
+4. Jäähdytys- ja ilmastointijärjestelmät
+
 Jäähdytysjärjestelmät ylläpitävät laitteiden toimintalämpötilan ja ilmankosteuden. Palvelinsalien ilmastointia hoitavat CRAC-/CRAH-yksiköt, jotka hyödyntävät kylmävesi- tai glykolijäähdytystä. Lämpö siirretään ulkoilmaan jäähdytystornien tai kuivasäteilijöiden avulla. Järjestelmät on kahdennettu ja suunniteltu energiatehokkaiksi. Hukkalämmön hyödyntäminen esimerkiksi kiinteistön lämmitykseen vähentää ympäristökuormaa.
 (Jäähdytysjärjestelmät siis varmistavat, että IT-laitteet pysyvät viileinä ja toimintakykyisinä ympäri vuorokauden. Yhdessä sähkönsyötön kanssa ne muodostavat datakeskuksen “ylläpitoinfrastruktuurin”, joka huolehtii laitteiden perusedellytyksistä.)
 
-7. Turvallisuus- ja valvontajärjestelmät
+6. Turvallisuus- ja valvontajärjestelmät
+
 Fyysinen turvallisuus kattaa kulunvalvonnan, kameravalvonnan ja vahvistetut rakenteet. Paloturvallisuus perustuu varhaisiin ilmaisimiin ja kaasusammutusjärjestelmiin. Ympäristöolosuhteita ja sähkönsyöttöä seurataan jatkuvasti antureilla ja valvontajärjestelmillä. Keskitetty valvomo tai NOC huolehtii hälytyksiin reagoimisesta ympäri vuorokauden. Kaikki järjestelmät tukevat luotettavaa ja keskeytymätöntä toimintaa.
 (Turvallisuus- ja valvontajärjestelmät varmistavat, että datakeskuksen toiminta ei keskeydy inhimillisten tai ympäristöllisten riskien takia. Fyysiset uhat, kuten tunkeutuminen tai tulipalo, pidetään hallinnassa, ja teknisten järjestelmien tilaa seurataan herkeämättä. Tämä monitasoinen turvaverkko täydentää datakeskuksen kokonaisuutta siten, että kaikki edellä kuvatut osa-alueet – tilat, laitteet, sähkö, jäähdytys ja turvallisuus – toimivat yhdessä luotettavasti.)
 
